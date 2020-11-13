@@ -9,8 +9,10 @@
 
 require 'open-uri'
 
+
 puts "Cleaning database now..."
 Ingredient.destroy_all
+Cocktail.destroy_all
 puts "Database clean ✅"
 
 puts "Creating ingredients"
@@ -22,3 +24,13 @@ ingredients["drinks"].each do |ingredient|
 end
 
 puts "Done! Created #{Ingredient.count} ingredients."
+
+
+Cocktails:
+
+Cocktail.create(name: "Old Fashioned")
+Cocktail.create(name: "Moscow Mule")
+Cocktail.create(name: "Dark & Stormy")
+Cocktail.create(name: "Vieux Carré ")
+Cocktail.create(name: "Mojito")
+Cocktail.create(name: "Margarita")
