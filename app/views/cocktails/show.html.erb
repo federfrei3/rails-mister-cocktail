@@ -19,12 +19,15 @@
               </td>
             </tr>
           <% end %>
+          <% @cocktail.photos.each do |photo| %>
+          <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+         <% end %>
         </tbody>
       </table>
     </div>
   </div>
 
   <%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail) %>
-  <%= link_to 'Back', cocktails_path %>
+  <%= link_to 'Back', root_path %>
 
 </div>
