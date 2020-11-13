@@ -26,7 +26,7 @@ end
 puts "Done! Created #{Ingredient.count} ingredients."
 
 
-Cocktails:
+# Cocktails:
 
 Cocktail.create(name: "Old Fashioned")
 Cocktail.create(name: "Moscow Mule")
